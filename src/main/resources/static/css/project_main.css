@@ -1,0 +1,201 @@
+body{
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.container_b{
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    width: 75%;
+    margin-top: 100px;
+    border: 1px solid lightgray;
+}
+.container_s{
+    width: 100%;
+    display: inline-block;
+     
+}
+main{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   	margin-top: 30px;
+   	grid-gap: 30px;
+}
+
+.slide_container{
+ 
+    width: 100%;
+    background-color: white;
+    
+    overflow: hidden;
+    position: relative;
+}
+.slide_box{
+    position: absolute;
+    overflow: hidden;
+    width: 100%; 
+    height: 350px;
+    transform: translate(0,0%);
+    
+}
+
+.slider{
+    position: absolute; left: 0; top: 0;
+    width: 1000%; 
+    overflow: hidden;
+    height: 350px;
+}
+
+.img_box{
+    width: 10%;  
+    float: left;
+    text-align: center;
+    display: grid;
+    height: 100%;
+    
+}
+.img_box > a{
+	height: 350px;
+}
+.img_box:hover{
+  
+}
+
+.img{
+    text-align: left;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  
+    
+    
+}
+.img > div{
+    
+    
+    z-index: 1;
+   
+}
+.slide_btn a{
+    position: absolute;
+    top: 300px;
+    color: white;
+    width: 40px; height: 40px; line-height: 30px;
+    z-index:999;
+    font-size: 16px;
+    transition: all 0.3s;
+    
+}
+.slide_btn a:hover{
+    color: black;
+}
+.slide_btn a.prev{
+    left: 0;
+    transform: rotate(90deg);
+}
+.slide_btn a.next{
+    right: 0;
+    transform: rotate(270deg);
+}
+
+
+.my_page{
+    
+    height: 400px;
+    
+    margin-right: 10px;
+}
+
+.my1{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap:10px;
+    background-color: white;
+    height: 100px;
+    
+}
+.my2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap:7px;
+    background-color: white;      
+    margin-top: 20px;
+    
+    
+}
+.my_face, .my_name, .resume, .information{
+    border: 1px solid lightgray;
+}
+.resume{
+  overflow-y:scroll;
+  height : 200px;
+}
+.information{
+  text-align : left;
+  overflow-y:scroll;
+  height : 200px;
+}
+.information div{
+	margin-left: 10px;
+}
+.resumelist{
+  position: relative;
+}
+.resumelist_btn {
+ 
+}
+.myresumelist{
+
+  height : 0px;
+ 
+  text-align:left;  
+  transition: all .7s;
+  position: absolute;
+  background-color: white;  
+  overflow: hidden;
+  
+  overflow-y : scroll;
+}
+.myresumelist > div{
+  	border: 1px solid gray;
+}
+
+
+@media(max-width:900px){
+	main{
+		margin:0;
+		grid-template-columns: auto;
+	}
+	.slide_container{
+		width: 100%; height: 300px;
+		
+	}
+	.slide_btn a{
+	    
+	    top: 150px;
+	}
+  .my_page{
+  		margin:0px;
+  		height: 320px;
+  }
+  .container_b{
+  	margin:0;
+    display: inline-block;
+    width: 100%;
+  }
+  .my1{
+    grid-template-columns: auto;
+  }
+  .my_face{
+    display:none;
+  }
+  .my_name{
+    width:100%;
+  }
+  
+  
+
+  

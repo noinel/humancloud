@@ -1,0 +1,32 @@
+@import url(project_footer.css);
+@import url(input.css);
+
+body{
+  background-color: #fafafa;
+  text-align: center; 
+  
+}
+.container{
+     
+    width: 50%;
+    text-align: left;
+}
+
+.container>div{
+    margin-top: 40px;
+    
+}
+.my_emil{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.mypassword{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+footer{
+	height:100px;
+}
+
+ 

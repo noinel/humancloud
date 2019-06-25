@@ -1,0 +1,164 @@
+.new_btn, .career_btn {   
+    width:50%;
+    
+  }
+  .new_btn svg, .career_btn svg{
+  	width: 10px;
+  	transition: all .7s;
+  
+  }
+  section{
+    background-color: white;
+    margin-top: 50px;
+  }
+  .slider_resume > img{
+  	width : 90%;
+  	height: 180px;
+  }
+  .resume_img{
+  	height: 100%;
+  	position: relative;
+  	
+  }
+  .resume_img >img{
+  	width : 100%;
+  	height: 100%;
+  	
+  	
+  }
+  .resume_img >img:hover{
+  	
+  	border : 2px solid rgb(95, 168, 241) !important;
+  	
+  }
+  .new_cpn{
+      
+      background-color: white;
+  }
+  
+  .new_cpn_box{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      text-align: center;
+      padding: 10px 10px 10px 10px;
+  }
+  .new_cpn_box >a>{
+      
+      position: relative;      
+      
+  }
+  .new_cpn_box >a>div{
+      height: 250px;
+      border-radius: 5%;
+      background-color: white;
+           
+      
+  }
+  .new_cpn_box >:hover{
+  	
+  }
+  .career_cpn{
+      background-color: white;
+  }
+  .career_cpn_box{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      padding: 10px;
+  }
+  .career_cpn_box >a>div{
+      height: 250px;     
+      background-color: white;
+      border-radius: 5%;
+            
+  }
+  .career_cpn_box >:hover{
+  	
+  	
+  }
+  .careercompany,.newcompany{
+  	display: grid;
+  	grid-template-columns: 3fr 2fr;
+  	justify-content: space-between;
+  	text-align: left;
+  	padding: 15px;
+  }
+  .careercompany div,.newcompany div{
+  	text-align: right;
+  }
+  
+  .resume-info{
+  	text-align: left;
+  	position: absolute;
+  	width:100%; height:100%;
+  	background:rgba(0,0,0, 0.6);
+  	z-index: 999;
+  	visibility: hidden;
+  	padding: 20px;
+  	color: white;
+  	
+  }
+  .resume_img:hover .resume-info{
+  	visibility: visible;
+  	
+  }
+  .resume_img:hover .slide_btn {
+  	visibility: visible;
+  }
+  .bandiv{
+  	display: none;
+  	text-align: center;
+  }
+  .bandiv >div>div{
+  	
+  	display: grid;
+  	grid-template-columns: auto;
+  	text-align: center;
+  }
+  .newprentdiv{
+  	width: 100%;
+  	
+  	display: inline-block;
+  }
+  @media(max-width:900px){
+  	section{
+		  	margin-top: 0px;
+	  }
+      .nav{
+      	
+      }
+  	  .background_img{
+  	  	height: 300px;
+  	  	
+  	  }
+  	  .champ{
+  	  	display: none;
+  	  }
+  	  
+  	  
+  	  .new_cpn_box{
+  	  		grid-template-columns: 1fr 1fr;
+  	  		grid-gap:3px;
+  	  		transition: all 0.3s;
+  	  }
+  	  .career_cpn_box{
+  	  		grid-template-columns: 1fr 1fr;
+  	  		grid-gap:3px;
+  	  		transition: all 0.3s;
+  	  }
+  	  main{
+  	  	grid-gap:3px;
+  	  }
+  	  .bandiv{
+	  	display:block;
+	  	height: 0px;
+	  	background-color: #fafafa;
+	  	transition: all 0.4s;
+	  	overflow-y:scroll; 
+  	}
+  	.my_page{
+  		display: none;
+  	}
+  }
+  
